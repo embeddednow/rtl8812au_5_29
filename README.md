@@ -26,7 +26,7 @@ Also, maybe here for an older version:
 http://down.tendacn.com/uploadfile/2017/Drive/U12_linux_v5.1.5_19247.20160830.rar  
 
 But, this cannot be used as is.  For Linux, it has to be integrated into a kernel module.  
-These interesting Realtek rtl8812au related repos below have that code - note only some have the latest 5.15 driver:  
+These interesting Realtek rtl8812au related repos below have that code - only one has the latest 5.29 driver.   
 
 ### Repos
 https://github.com/gordboy/rtl8812au  **** (5.2.9 Realtek Driver & where this repo was forked from)  
