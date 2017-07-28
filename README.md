@@ -4,7 +4,8 @@
 ## TO DO...
 1) Grab, build and test the driver in this repo  
 3) Deploy & test widely  
- 
+## End of TO DO
+
 This repo is forked from here:  
 https://github.com/gordboy/rtl8812au  
 
