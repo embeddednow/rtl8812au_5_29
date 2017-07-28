@@ -110,30 +110,30 @@ make
 ```
 ### Warnings & Errors
 NOTE: You may get these warning messages:  They are ok.  If you need to, delete the _DATE_ & _TIME_ system variables  
-`rtl8812au/core/rtw_debug.c:50:62: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]`
+`rtl8812au/core/rtw_debug.c:50:62: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]`  
 -and-  
-`rtl8812au/core/rtw_debug.c:50:62: warning: macro "__TIME__" might prevent reproducible builds`
+`rtl8812au/core/rtw_debug.c:50:62: warning: macro "__TIME__" might prevent reproducible builds`  
 
 ### Removing old drivers
 if you have previously installed a driver for the 8812au, you have to erase any previous module rtl8812au.ko or 8812au.ko  
 It is located in: (Note: Use the appropriate version for your kernel)  
-`/lib/modules/4.4.0-83-generic/kernel/drivers/net/wireless/`
+`/lib/modules/4.4.0-83-generic/kernel/drivers/net/wireless/`  
 
 If you have a module for rtl812au there, erase it  
 (Again Note: Use the appropriate version for your kernel)  
-`sudo rm -r /lib/modules/4.4.0-83-generic/kernel/drivers/net/wireless/8812au.ko`
+`sudo rm -r /lib/modules/4.4.0-83-generic/kernel/drivers/net/wireless/8812au.ko`  
 -or-  
-`sudo rm -r /lib/modules/4.4.0-83-generic/kernel/drivers/net/wireless/rtl8812au.ko`
+`sudo rm -r /lib/modules/4.4.0-83-generic/kernel/drivers/net/wireless/rtl8812au.ko`  
 
 and unload the module in case it is active  
-`sudo modprobe -r 8812au.ko`
+`sudo modprobe -r 8812au.ko`  
 -or-  
-`sudo modprobe -r rtl8812au.ko`
+`sudo modprobe -r rtl8812au.ko`  
 
 ### Finally! - Install the driver module  
 `sudo make install`  
 `sudo modprobe 8812au`  
--or-
+-or-  
 `sudo modprobe rtl8812au`  
 
 ### To use dkms:  
