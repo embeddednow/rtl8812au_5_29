@@ -184,10 +184,10 @@ put this line in the file:
 `iwconfig`  
 `ifconfig`  
 
-`sudo vi /etc/default/grub`
+`sudo vi /etc/default/grub`  
 add net.ifnames=0 biosdevname=0 to GRUB_CMDLINE_LINUX=""  
-`GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"`
+`GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"`  
 update grub.cfg  
-`sudo grub-mkconfig -o /boot/grub/grub.cfg`
+`sudo grub-mkconfig -o /boot/grub/grub.cfg`  
 Edit your /etc/network/interfaces to change interface name then reboot.  
 
