@@ -174,8 +174,20 @@ put this line in the file:
 `SUSPEND_MODULES=“rtl8812au wlx74da38c01319”`  
 
 ### To force a new ip address and forget all old leases do the following.  This is necessary sometimes when an access point goes down, the DHCP lease expires and the access point comes back up
-`sudo dhclient -r wlx74da38c01319`  
+`sudo dhclient -rd wlx74da38c01319`  
+-or- wait a few seconds  
 `sudo rm /var/lib/dhcp/dhclient.leases`  
 `sudo service network-manager restart`  
 
+### useful ideas
+`ip addr`  
+`iwconfig`  
+`ifconfig`  
+
+`sudo vi /etc/default/grub`
+add net.ifnames=0 biosdevname=0 to GRUB_CMDLINE_LINUX=""  
+`GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"`
+update grub.cfg  
+`sudo grub-mkconfig -o /boot/grub/grub.cfg`
+Edit your /etc/network/interfaces to change interface name then reboot.  
 
