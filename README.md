@@ -137,7 +137,7 @@ and unload the module in case it is active
 -or-  
 `sudo modprobe rtl8812au`  
 
-### To use dkms:  
+## To use dkms:  
 This is necessary if you want the OS to automatically rebuild this driver after a kernel change or upgrade  
 As root (or sudo) copy source folder contents to /usr/src/rtl8812au-5.2.9  
 `sudo dkms add -m rtl8812au -v 5.2.9`  
@@ -146,7 +146,7 @@ As root (or sudo) copy source folder contents to /usr/src/rtl8812au-5.2.9
 To use dkms uninstall and remove...  
 `sudo dkms remove -m rtl8812au -v 5.2.9 --all`  
 
-### NetworkManager and other configuration  
+## Best Practices for NetworkManager and other configuration issues  
 Add this stanza to /etc/NetworkManager/NetworkManager.conf  
 (This prevents a random WiFi MAC address being assigned everytime)  
 
