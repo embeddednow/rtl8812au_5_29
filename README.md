@@ -173,8 +173,8 @@ put this line in the file:
 -or-  
 `SUSPEND_MODULES=“rtl8812au wlx74da38c01319”`  
 
-### To force a new ip address and forget all old leases do the following  
-### This is necessary sometimes when an access point goes down, the DHCP lease expires and the access point comes back up  
+### To force a new ip address and forget all old leases do the following
+### This is necessary sometimes when an access point goes down, the DHCP lease expires and the access point comes back up
 `sudo dhclient -r wlx74da38c01319`  
 `sudo rm /var/lib/dhcp/dhclient.leases`  
 `sudo service network-manager restart`  
