@@ -164,10 +164,7 @@ Anyway, edit the following file (or create it if it doesn’t exist):
 `sudo vi /etc/pm/config.d/config`  
 
 put this line in the file:  
-
 `SUSPEND_MODULES=“8812au wlx74da38c01319”`  
--or-  
-`SUSPEND_MODULES=“rtl8812au wlx74da38c01319”`  
 
 ### To force a new ip address and forget all old leases do the following.  This is necessary sometimes when an access point goes down, the DHCP lease expires and the access point comes back up
 `sudo dhclient -rd wlx74da38c01319`  
