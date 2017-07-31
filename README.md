@@ -128,14 +128,10 @@ If you have a module for rtl812au there, erase it
 
 and unload the module in case it is active  
 `sudo modprobe -r 8812au.ko`  
--or-  
-`sudo modprobe -r rtl8812au.ko`  
 
 ### Finally! - Install the driver module  
 `sudo make install`  
 `sudo modprobe 8812au`  
--or-  
-`sudo modprobe rtl8812au`  
 
 ## To use dkms:  
 This is necessary if you want the OS to automatically rebuild this driver after a kernel change or upgrade  
