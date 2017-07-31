@@ -180,7 +180,7 @@ put this line in the file:
 ### Connect to a wifi network via command line
 `nmcli con add type wifi con-name "SSIDNAME" ifname wlan0 ssid "SSIDNAME" && nmcli con modify "SSIDNAME" wifi-sec.key-mgmt wpa-psk wifi-sec.psk PASSWORD && nmcli con up "SSIDNAME"`  
 
-### If you want to go back to the old Linux way of naming network devices generically  
+### If you want to go back to the old Linux way of naming network devices generically (eg. wlan0)  
 `sudo vi /etc/default/grub`  
 add net.ifnames=0 biosdevname=0 to GRUB_CMDLINE_LINUX=""  
 `GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"`  
