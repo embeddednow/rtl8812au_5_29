@@ -105,7 +105,7 @@ sudo apt-get install dkms
 ```
 ```
 git clone https://github.com/embeddednow/rtl8812au_5_29.git  
-cd rtl8812AU  
+cd rtl8812AU_5_29  
 make clean  
 make  
 ```
