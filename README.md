@@ -118,8 +118,6 @@ It is located in: (Note: Use the appropriate version for your kernel)
 If you have a module for rtl812au there, erase it  
 (Again Note: Use the appropriate version for your kernel)  
 `sudo rm -r /lib/modules/4.4.0-83-generic/kernel/drivers/net/wireless/8812au.ko`  
--or-  
-`sudo rm -r /lib/modules/4.4.0-83-generic/kernel/drivers/net/wireless/rtl8812au.ko`  
 
 and unload the module in case it is active  
 `sudo modprobe -r 8812au.ko`  
