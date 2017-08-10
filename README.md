@@ -1,5 +1,6 @@
 # Linux 802.11 AC support
 ## *Realtek rtl8812au chipset & family*
+## Tested and verified in Linux Kernel 4.4, Ubuntu 16.04.1,.2,.3
 
 This repo is forked from here:  
 https://github.com/gordboy/rtl8812au  
@@ -128,11 +129,11 @@ and erase it - (Again Note: Use the appropriate version for your kernel)
 ## To use dkms:  
 This is necessary if you want the OS to automatically rebuild this driver after a kernel change or upgrade  
 As root (or sudo) copy source folder contents to /usr/src/rtl8812au-5.2.9  
-`sudo dkms add -m rtl8812au -v 5.2.9`  
-`sudo dkms build -m rtl8812au -v 5.2.9`  
-`sudo dkms install -m rtl8812au -v 5.2.9`  
+`sudo dkms add -m 8812au -v 5.2.9`  
+`sudo dkms build -m 8812au -v 5.2.9`  
+`sudo dkms install -m 8812au -v 5.2.9`  
 To use dkms uninstall and remove...  
-`sudo dkms remove -m rtl8812au -v 5.2.9 --all`  
+`sudo dkms remove -m 8812au -v 5.2.9 --all`  
 
 ## Best Practices for NetworkManager and other configuration issues  
 Add this stanza to /etc/NetworkManager/NetworkManager.conf  
