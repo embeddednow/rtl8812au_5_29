@@ -115,12 +115,11 @@ if you have previously installed a driver for the 8812au, you have to erase any 
 It is located in: (Note: Use the appropriate version for your kernel)  
 `/lib/modules/4.4.0-83-generic/kernel/drivers/net/wireless/`  
 
-If you have a module for rtl812au there, erase it  
-(Again Note: Use the appropriate version for your kernel)  
-`sudo rm -r /lib/modules/4.4.0-83-generic/kernel/drivers/net/wireless/8812au.ko`  
-
-and unload the module in case it is active  
+If you have a module for rtl8812au there unload the module in case it is active  
 `sudo modprobe -r 8812au.ko`  
+
+and erase it - (Again Note: Use the appropriate version for your kernel)  
+`sudo rm -r /lib/modules/4.4.0-83-generic/kernel/drivers/net/wireless/8812au.ko`  
 
 ### Finally! - Install the driver module  
 `sudo make install`  
