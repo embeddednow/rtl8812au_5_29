@@ -94,6 +94,7 @@ cd 80211AC
 ```
 sudo apt-get update  
 sudo apt-get upgrade  
+sudo reboot  
 sudo apt-get install linux-headers-generic  
 sudo apt-get install build-essential  
 sudo apt-get install git  
